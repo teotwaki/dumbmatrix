@@ -34,14 +34,9 @@ class DumbMatrix {
   void init_gpio() const;
 
   // runtime GPIO manipulation
-  void enable_display() const;
-  void disable_display() const;
   void gpio_select_row(const TSize row) const;
-  void advance_clock() const;
-  void latch_data() const;
 
   void paint_row(const TSize row) const;
-  void paint_column(const TSize row, const TSize column) const;
 
   public:
   DumbMatrix();
